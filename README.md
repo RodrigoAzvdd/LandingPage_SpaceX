@@ -1,2 +1,2 @@
 # LandingPage_SpaceX
->> pequeno projeto usando bootstrap :)
+Pequeno projeto usando bootstrap :)
