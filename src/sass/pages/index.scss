@@ -12,14 +12,13 @@
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../../../src/img/home/01.jpg);
+    background-image: url(../img/home/01.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: top center;
 }
 
 .container02 {
-    flex: 1;
     display: flex;
     padding-top: 200px;
     flex-direction: column;
@@ -27,23 +26,26 @@
 
 .container03 {
     min-height: 100vh;
-    background-image: url(../../../src/img/home/03.jpg);
+    background-image: url(../img/home/03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
 }
 
 .container04 {
     min-height: 100vh;
-    background-image: url(../../../src/img/home/02.gif);
+    background-image: url(../img/home/02.gif);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
 }
 
 .container05 {
     min-height: 100vh;
-    background-image: url(../../../src/img/home/04.jpg);
+    background-image: url(../img/home/04.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: top center;
 }
 
 .container06 {
@@ -85,12 +87,8 @@
     }
 }
 
-.scroll-down {
-    padding-top: 17rem;
-}
-
 .bi {
-  width: 8rem;
+    width: 8rem;
 }
 
 .plus {
@@ -100,5 +98,4 @@
     border-radius: 5px;
     font-size: 16px;
     font-weight: 500;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
