@@ -1,3 +1,2 @@
 # LandingPage_SpaceX
-</hr>
-pequeno projeto usando bootstrap... :)
+Pequeno projeto usando bootstrap :)
