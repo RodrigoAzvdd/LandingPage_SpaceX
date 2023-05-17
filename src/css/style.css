@@ -126,4 +126,15 @@
   text-decoration: none;
 }
 
+@media (max-width: 690px) {
+  .text-soon {
+    font-size: 70px;
+  }
+}
+@media (max-width: 470px) {
+  .text-soon {
+    font-size: 40px;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
