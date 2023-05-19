@@ -1,11 +1,39 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+.underline-effect {
+  position: relative;
+  display: inline-block;
+}
+
+.underline-effect::before {
+  content: "";
+  position: absolute;
+  bottom: 0.5rem;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffffff;
+  /* Cor do underline */
+  transition: width 0.5s ease;
+  /* Duração e transição da animação */
+}
+
+.underline-effect:hover::before {
+  width: 100%;
+  /* Largura máxima quando passar o mouse */
+}
+
 .logo {
   width: 14rem;
+}
+
+.navbar-nav {
+  gap: 20px;
 }
 
 .container00 {
@@ -15,7 +43,7 @@
   background-image: url(../img/home/01.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 
 .container02 {
@@ -29,7 +57,7 @@
   background-image: url(../img/home/03.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 
 .container04 {
@@ -37,7 +65,7 @@
   background-image: url(../img/home/02.gif);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 
 .container05 {
@@ -45,7 +73,7 @@
   background-image: url(../img/home/04.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 
 .container06 {
@@ -69,17 +97,18 @@
   font-size: 12px;
   font-weight: 600;
   padding-top: 35px;
+  text-align: left;
 }
 
 .copy {
-  font-size: 12px;
+  font-size: 15px;
   color: #555252;
 }
 
 .social-media {
   text-decoration: none;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
-  font-size: 12px;
+  font-size: 15px;
   color: white;
 }
 .social-media:hover {
@@ -99,6 +128,22 @@
   font-weight: 500;
 }
 
+@media (max-width: 992px) {
+  .navbar-nav {
+    gap: 0;
+  }
+  .logo {
+    width: 11rem;
+  }
+}
+@media (max-width: 313px) {
+  .navbar-toggler {
+    padding: 0;
+  }
+  .logo {
+    padding-top: 1.1rem;
+  }
+}
 * {
   padding: 0;
   margin: 0;
@@ -146,10 +191,10 @@
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  background-image: url(../img/humanFlight/01.jpg);
+  background-image: url(../img/humanFlight/HS-hero.webp);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
 }
 
 .title-human {
@@ -180,7 +225,50 @@
   background-image: url(../img/humanFlight/02.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top center;
+  background-position: center center;
+}
+
+.container13 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/humanFlight/03.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container15 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/humanFlight/04.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container17 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/humanFlight/05.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.container19 {
+  display: flex;
+  flex-direction: column;
+  min-height: 50vh;
+  background-color: #000000;
+}
+
+.services {
+  border-radius: 5px;
+  font-size: 1.1rem;
+  padding: 10px 10px 10px 10px;
 }
 
 .text-content-human {
@@ -204,30 +292,45 @@
   justify-content: flex-end;
 }
 
-.content-earth {
-  padding-top: 11rem;
+.content-earth, .content-satelite {
+  padding-top: 30%;
 }
 
-.title-earth {
+.title-earth, .title-satelite {
   color: #fff;
 }
 
-.subtitle-earth {
+.subtitle-earth, .subtitle-satelite {
   font-size: 4rem;
   color: #fff;
   font-weight: 700;
 }
 
-.info-earth {
+.info-earth, .info-satelite {
+  font-size: 1.2rem;
   color: #fff;
   padding-bottom: 3rem;
 }
 
-.terminar {
-  height: 20px;
-  text-align: center;
+@media (max-width: 1030px) {
+  .info-earth, .info-satelite {
+    font-size: 1.1rem;
+  }
+  .subtitle-earth, .subtitle-satelite {
+    font-size: 2.5rem;
+  }
+  .content-earth {
+    padding-left: 40%;
+  }
 }
-
+@media (max-width: 790px) {
+  .info-earth, .info-satelite {
+    font-size: 1rem;
+  }
+  .subtitle-earth, .subtitle-satelite {
+    font-size: 3rem;
+  }
+}
 @media (max-width: 710px) {
   .title-human {
     font-size: 4.5rem;
@@ -236,12 +339,26 @@
     font-size: 1.5rem;
   }
 }
+@media (max-width: 500px) {
+  .services {
+    margin: 0;
+    padding: 0;
+  }
+}
 @media (max-width: 470px) {
   .title-human {
     font-size: 3.5rem;
   }
   .subtitle-human {
     font-size: 1.2rem;
+  }
+}
+@media (max-width: 360px) {
+  .title-human {
+    font-size: 3rem;
+  }
+  .subtitle-human {
+    font-size: 1rem;
   }
 }
 
