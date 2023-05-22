@@ -1,11 +1,11 @@
-var contadorElementos = Array.from(document.querySelectorAll(".cont"));
-var contadorObserver;
+let contadorElementos = Array.from(document.querySelectorAll(".cont"));
+let contadorObserver;
 
 function aumentarContador(elemento, valorFinal) {
-  var valorAtual = 0;
-  var incremento = Math.ceil(valorFinal / 200);
+  let valorAtual = 0;
+  let incremento = Math.ceil(valorFinal / 200);
 
-  var animarContador = function() {
+  let animarContador = function() {
     if (valorAtual <= valorFinal) {
       elemento.textContent = valorAtual.toLocaleString();
       valorAtual += incremento;
@@ -21,7 +21,7 @@ function aumentarContador(elemento, valorFinal) {
 function verificarElementoVisivel(entries) {
   entries.forEach(function(entry) {
     if (entry.isIntersecting) {
-      var valorFinal = parseInt(entry.target.textContent);
+      let valorFinal = parseInt(entry.target.textContent);
       aumentarContador(entry.target, valorFinal);
       contadorObserver.unobserve(entry.target);
     }
@@ -37,5 +37,3 @@ function observarElementos() {
 
 AOS.init();
 observarElementos();
-
-//CONFESSO QUE ISSO VEIO DO NOSSO AMIGO, AINDA ESTOU TENTANDO ENTENDER ESSE CODIGO...
