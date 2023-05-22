@@ -17,14 +17,11 @@
     width: 0;
     height: 2px;
     background-color: #ffffff;
-    /* Cor do underline */
     transition: width 0.5s ease;
-    /* Duração e transição da animação */
 }
 
 .underline-effect:hover::before {
     width: 100%;
-    /* Largura máxima quando passar o mouse */
 }
 
 .logo {

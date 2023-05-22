@@ -1,4 +1,3 @@
-@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
@@ -18,14 +17,11 @@
   width: 0;
   height: 2px;
   background-color: #ffffff;
-  /* Cor do underline */
   transition: width 0.5s ease;
-  /* Duração e transição da animação */
 }
 
 .underline-effect:hover::before {
   width: 100%;
-  /* Largura máxima quando passar o mouse */
 }
 
 .logo {
@@ -359,6 +355,68 @@
   }
   .subtitle-human {
     font-size: 1rem;
+  }
+}
+.container20 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/falcon9/01.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.title-falcon {
+  font-size: 6rem;
+  font-weight: bold;
+}
+
+.container22 {
+  font-size: 5rem;
+  min-height: 300px;
+  background-color: #000;
+}
+
+.container23 {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-image: url(../img/falcon9/02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.text-info {
+  font-size: 1.2rem;
+  color: #fff !important;
+}
+
+.text-content-falcon {
+  width: 45rem;
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+@media (max-width: 770px) {
+  .text-content-falcon {
+    font-size: 1.3rem;
+    width: 100%;
+  }
+  .text-info {
+    font-size: 0.9rem;
+  }
+  .cont {
+    font-size: 4rem;
+  }
+  .container22 {
+    flex-direction: column;
+  }
+}
+@media (max-width: 400px) {
+  .title-falcon {
+    font-size: 5rem;
   }
 }
 
