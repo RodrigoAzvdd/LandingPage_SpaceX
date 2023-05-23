@@ -29,7 +29,57 @@
     background-position: center center;
 }
 
-.table1, .table-info {
+.container24 {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-image: url(../img/falcon9/08.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+.container25 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+
+.img9 {
+    background-image: url(../img/falcon9/09.jpg);
+}
+
+.img10 {
+    background-image: url(../img/falcon9/10.jpg);
+}
+
+.img11 {
+    background-image: url(../img/falcon9/11.jpg);
+}
+
+.img12 {
+    background-image: url(../img/falcon9/12.jpg);
+}
+
+.img13 {
+    background-image: url(../img/falcon9/13.jpg);
+}
+
+.img14 {
+    background-image: url(../img/falcon9/14.jpg);
+}
+
+.text-carousel {
+    background-color: #000;
+}
+
+.table1,
+.table-info {
     font-size: 0.9rem;
     max-width: 30rem;
     margin-left: 20%;
@@ -40,40 +90,61 @@
     font-weight: 600;
 }
 
-.img1 {
+.main-content-img2 {
+    display: flex;
+    flex-direction: column;
+    max-width: 30rem;
+    margin-left: 20%;
+    color: #fff;
+}
+
+.img1,
+.img2,
+.img3,
+.img4,
+.img5,
+.img9,
+.img10,
+.img11,
+.img12,
+.img13,
+.img14 {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
-    background-image: url(../img/falcon9/03.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: top center;
     justify-content: center;
-    align-items: start;
+}
+
+.img1 {
+    background-image: url(../img/falcon9/03.jpg);
+
     p {
         margin-bottom: 0.8rem;
     }
 }
 
-
 .img2 {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-image: url(../img/falcon9/04.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
 }
 
 .img3 {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
     background-image: url(../img/falcon9/05.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+}
+
+.img4 {
+    background-image: url(../img/falcon9/06.jpg);
+}
+
+.img5 {
+    background-image: url(../img/falcon9/07.jpg);
+}
+
+.second-title {
+    font-size: 1.5rem;
+    font-weight: 200;
 }
 
 .text-info {
@@ -83,7 +154,7 @@
 
 .text-content-falcon {
     width: 45rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     color: #fff;
 }
 
@@ -111,31 +182,41 @@
         flex-direction: column;
     }
 }
+
 @media (max-width: 400px) {
     .title-falcon {
         font-size: 5rem;
     }
 }
+
 @media (max-width: 1040px) {
-    .table1, .table-info {
+
+    .table1,
+    .table-info,
+    .main-content-img2 {
         font-size: 0.9rem;
         max-width: 30rem;
         margin-left: 10%;
     }
 }
+
 @media (max-width: 790px) {
-    .table1, .table-info {
+
+    .table1,
+    .table-info,
+    .main-content-img2 {
         font-size: 0.8rem;
         max-width: 25rem;
         margin-left: 10%;
     }
 }
+
 @media (max-width: 445px) {
-    .table1, .table-info {
+
+    .table1,
+    .table-info {
         margin-left: 5px;
         margin-right: 5px;
     }
 
 }
-
-
